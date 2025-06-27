@@ -1,0 +1,38 @@
+/* Estilo dos botões */
+.virus, .bacteria, .fungos, .protistas, .taxonomia, .feedback {
+  background-color: #EACD61;
+  color: #053f67;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.virus:hover, .bacteria:hover, .fungos:hover, .protistas:hover, .taxonomia:hover, .feedback:hover {
+  background-color: #053f67;
+  color: #EACD61;
+}
+
+/* Animação extra para quem tiver [botao] */
+.virus, .bacteria, .fungos, .protistas, .taxonomia, .feedback {
+  text-align: center;
+}
+
+@keyframes anima {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.virus:hover, .bacteria:hover, .fungos:hover, .protistas:hover, .taxonomia:hover, .feedback:hover {
+  animation-name: anima;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
